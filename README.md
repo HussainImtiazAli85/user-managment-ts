@@ -1,47 +1,43 @@
-# User Management TS
+# User Management Dashboard
 
-A user management frontend built with Vite, React, and TypeScript. The app provides a clean admin-style interface for viewing, filtering, creating, editing, and deleting users.
+A responsive user management application built with React and TypeScript.
+It allows you to view, add, edit, and delete users through a clean dashboard UI.
+
+## Live Demo
+
+[View Live ->](https://user-management-theta-rust.vercel.app)
 
 ## Tech Stack
 
-- React 18
+- React
 - TypeScript
+- Tailwind CSS
 - Vite
 - Ant Design
-- Tailwind CSS
-- ESLint
 
 ## Features
 
-- View a list of users
-- Search users by name, email, or phone number
-- Filter users by role and status
-- Create new users
-- Edit existing users
+- View users in a clean dashboard layout
+- Add new users through a form
+- Edit existing user details
 - Delete users
-- View summary statistics for total users, active users, and administrators
-- Uses a mock in-memory API for local development
+- Search users by name, email, or phone
+- Filter users by role and status
+- View summary statistics for users and administrators
+- Responsive interface for desktop and mobile
 
 ## Getting Started
 
-### Prerequisites
-
-- Node.js 18 or later
-- npm
-
-### Installation
-
 ```bash
+# Clone the repo
+git clone https://github.com/HussainImtiazAli85/user-managment-ts.git
+
+# Install dependencies
 npm install
-```
 
-### Run the Development Server
-
-```bash
+# Start the dev server
 npm run dev
 ```
-
-The app will start on the local Vite development server.
 
 ## Available Scripts
 
@@ -54,44 +50,35 @@ npm run preview
 
 ## Environment Variables
 
-You can control the simulated API latency with the following variable:
+The project supports a configurable mock API delay:
 
 ```env
 VITE_API_DELAY=1000
 ```
 
-If this variable is not set, the app uses a default delay of 1000 milliseconds.
+If this variable is not set, the app defaults to 1000 milliseconds.
 
 ## Project Structure
 
 ```text
 src/
-  components/
-    UserFilters.tsx
-    UserForm.tsx
-    UserList.tsx
-    UserManagement.tsx
-  hooks/
-    useUsers.ts
-  services/
-    userApi.ts
-  types/
-    User.ts
-  App.tsx
-  index.css
-  main.tsx
+├── components/    # Reusable UI components
+├── hooks/         # Custom React hooks
+├── services/      # Mock API layer
+├── types/         # TypeScript interfaces
+├── App.tsx        # Root component
+└── main.tsx       # Application entry point
 ```
 
 ## Notes
 
-- User data is stored in memory inside the mock API service.
-- Any changes made while the app is running are reset when the page reloads.
-- This project is intended for frontend development and UI demonstration.
+- This project currently uses a mock in-memory API for local development.
+- Changes are reset when the page reloads.
+- The live demo is deployed on Vercel.
 
-## Build for Production
+## GitHub Repo Setup
 
-```bash
-npm run build
-```
+The GitHub About section is managed on GitHub, not from this repository. To complete the repo presentation, add these manually on the repo page:
 
-The production-ready files will be generated in the `dist` folder.
+- Description: User management dashboard built with React, TypeScript, Tailwind CSS, and Vite
+- Topics: react, typescript, tailwind, vite
